@@ -28,6 +28,10 @@ while True:
         print myzip.read(fn % num)
         break
 
-    comments.append(myzip.getinfo(fn % num).comment)
+    newc=myzip.getinfo(fn % num).comment
+    if newc not in comments and newc.isalpha():
+        comments.append(newc)
+    # comments.append(myzip.getinfo(fn % num).comment)
+
 # print comments
 print "".join(comments)

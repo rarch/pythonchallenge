@@ -2,6 +2,7 @@ pythonchallenge
 ===============
 
 solutions to python challenge problems
+at http://www.pythonchallenge.com
 
 0:274877906944
 1:ocr

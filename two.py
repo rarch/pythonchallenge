@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 from re import findall
+from util import fread
 
-with open("./data/ocr.txt",'r') as f:
-    data=f.read()
-print "".join(findall("[A-Za-z]", data))
+def main():
+    data=fread("./data/ocr.txt")
+
+    print "".join(findall("[A-Za-z]", data))
+
+if __name__ == "__main__":
+    main()

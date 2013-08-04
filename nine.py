@@ -27,9 +27,13 @@ second=(156,141,165,135,169,131,176,130,187,134,191,140,191,146,186,150,179,155,
 77,155,81,148,87,140,96,138,105,141,110,136,111,126,113,129,118,117,128,114,137,115,146,114,155,115,
 158,121,157,128,156,134,157,136,156,136)
 
-img = Image.new('RGB', (640,480))
-draw = ImageDraw.Draw(img)
-draw.line(first, fill="red")
-draw.line(second, fill="blue")
-img.show()
-img.save("./data/out.png")
+def main():
+    img = Image.new('RGB', (640,480))
+    draw = ImageDraw.Draw(img)
+    draw.line(first, fill="red")
+    draw.line(second, fill="blue")
+    img.show()
+    img.save("./data/out.png")
+
+if __name__ == "__main__":
+    main()
